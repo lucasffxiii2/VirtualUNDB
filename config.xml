@@ -1,10 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.virtual.undb" version="3.7.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.moodlemoot.mootes14" 
+        version="3.7.0" 
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Moodle</name>
     <description>Moodle official app</description>
-    <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
+    <author email="virtual@undb.edu.br" href="http://virtual.undb.edu.br">Virtual UNDB</author>
     <content src="index.html" />
     <access origin="*" />
+    
+        <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <!-- The following phonegap camera feature block Google Play to install the app on Nexus 7.
+         Nothing is broken without it, so we disable it.
+         Note that at the current moment we don't use phonegap video capture plugin - MOBILE-296.
+         -->
+    <!-- feature name="http://api.phonegap.com/1.0/camera"/ -->
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+
+    <preference name="phonegap-version" value="3.6.3" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="stay-in-webview"  value="false" />
+    <preference name="webviewbounce"    value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="load-url-timeout" value="60000" />
+
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="iosPersistentFileLocation" value="Compatibility" />
+    
     <access launch-external="yes" origin="tel:*" />
     <access launch-external="yes" origin="mailto:*" />
     <access launch-external="yes" origin="geo:*" />
