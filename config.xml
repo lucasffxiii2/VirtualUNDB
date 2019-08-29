@@ -119,7 +119,7 @@
     </plugin>
     <plugin name="cordova-clipboard" spec="1.2.1" />
     <plugin name="cordova-plugin-badge" spec="0.8.8" />
-    <plugin name="cordova-plugin-camera" spec="6.3.0" />
+    
     <plugin name="cordova-plugin-customurlscheme" spec="4.4.0">
         <variable name="URL_SCHEME" value="moodlemobile" />
     </plugin>
@@ -131,7 +131,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.1.3" />
     <plugin name="cordova-plugin-local-notification" spec="https://github.com/moodlemobile/cordova-plugin-local-notification.git#moodle" />
-    <plugin name="cordova-plugin-media-capture" spec="6.3.0" />
+    
     <plugin name="cordova-plugin-network-information" spec="2.0.1" />
     <plugin name="cordova-plugin-screen-orientation" spec="3.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
