@@ -232,6 +232,26 @@
         <application android:usesCleartextTraffic="true" />
     </edit-config>
                 ----->
+    <!------- testes
+    <!-- See MOBILE-892 -->
+    <preference name="permissions" value="none"/>
+
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+        <string>We need camera access to take pictures so you can attach them as part of your submissions.</string>
+    </edit-config>
+    <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+        <string>We need microphone access to record sounds so you can attach them as part of your submissions.</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+        <string>We need photo library access to get pictures from there so you can attach them as part of your submissions.</string>
+    </edit-config>
+
+    <edit-config target="UISupportsDocumentBrowser" file="*-Info.plist" mode="merge">
+        <true/>
+    </edit-config>
+    <!----- fim do codigo teste---->
+        
+        
     <config-file parent="/manifest/application" target="AndroidManifest.xml">
         <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
     </config-file>
