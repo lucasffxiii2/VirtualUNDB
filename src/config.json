@@ -61,7 +61,7 @@
     "siteurl": "http://virtual.undb.edu.br/",
     "sitename": "Virtual UNDB",
     "multisitesdisplay": "",
-    "skipssoconfirmation": false,
+    "skipssoconfirmation": true,
     "forcedefaultlanguage": false,
     "privacypolicy": "https:\/\/moodle.org\/mod\/page\/view.php?id=8148",
     "notificoncolor": "#f98012",
